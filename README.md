@@ -25,7 +25,7 @@ iOS Starter Kit already include sample implementation for
 
 
 
-How to use iOSStarterKit ?
+How to use iOS Starter Kit ?
 ==============
     •	Clone the project
     •	Open the project with Xcode
