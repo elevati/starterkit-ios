@@ -1,5 +1,5 @@
 
-Starter Kit, Boiler plate for iOS application projects
+iOS Starter Kit, Boiler plate for iOS application projects
 
 What is iOS Starter Kit
 ==============
