@@ -29,7 +29,7 @@ How to use iOSStarterKit ?
 ==============
     •	Clone the project
     •	Open the project with Xcode
-    •	Click on the project then in the right sidebar:
+    •	Click on the project then in the right sidebar
     •	Update the project name and accept corrections
     •	Update the Organization Name
     •	Update the Class Prefix Name
