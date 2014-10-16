@@ -1,0 +1,47 @@
+
+SETUP NOTES:
+
+APPLICATION REQUIREMENTS
+Mac OS X 10.9+ with the Xcode 6.0.0 and base iOS 7.0
+
+DATABASE
+Core Data is used for managing the data
+
+LANGUAGE / LIBRARIES
+Objective C & for libraries CocoaPods are used(refer http://guides.cocoapods.org/using/getting-started.html).
+For CocoaPods library dependency refer Podfile & Podfile.lock in project root folder.
+
+GIT CLONE COMMAND
+git clone git@github.com:elevati/starterkit-ios.git iOS-StarterKit
+
+
+INSTALLATION
+
+- Get a clone of ‘iOS-StarterKit’ repository, use below commands,
+  cd “goto application folder”
+  git clone git@github.com:elevati/starterkit-ios.git iOS-StarterKit
+
+- Then install cocoa pods on your system if not exists and download the dependent libraries from the CocoaPods.
+
+  - Command for installing cocoa pods on your system (also refer http://guides.cocoapods.org/using/getting-started.html#getting-started)
+    $ sudo gem install cocoapods
+
+  - Steps for downloading the libraries from the CocoaPods
+    cd “goto application root folder”
+    $ pod install 
+
+ 
+CONFIGURATION:
+
+Configuration file contains following important things:
+
+1. Apple Store ID 
+2. Application Name 
+3. App Store URL 
+4. Bundle Identifier 
+5. Google Analytics ID
+6. Advertisement Prefix
+7. API related keys
+8. Base API URL
+
+For updating configurable values refer iOS-StarterKit/iOS-StarterKit-Prefix.pch file

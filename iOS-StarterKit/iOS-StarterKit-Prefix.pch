@@ -1,0 +1,69 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+
+#define BASE_API_URL @"http://xyz.com"
+
+#define kAppName @""
+#define AppStore_Id 0
+
+//Get google analytics id
+#define Google_Analytics_ID @"UA-XXXXXXXX-X"
+#define Analytics_Dispatch_Time 90
+
+//Configure DFP advertisement account id
+#define Advertisement_Prefix @"/XXXXXXXX/"
+
+//Conditional Constant
+#ifndef IS_IPAD
+#define IS_IPAD   ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#endif
+
+#ifndef IS_IPHONE
+#define IS_IPHONE   (!IS_IPAD)
+#endif
+
+#ifndef IS_RETINA
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2)
+#endif
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+
+//String Constants
+#define Database_Name @"DatabaseName.sqlite"
+
+#define iPhoneMasterView @"MasterViewController_iPhone"
+#define iPadMasterView @"MasterViewController_iPhone"
+
+#define iPadMemberCell @"MemberCell_iPad"
+#define iPhoneMemberCell @"MemberCell"
+
+#define MemberCell1 @"MemberCell"
+
+#define No_More_Content_To_Display @"no_post_to_display"
+
+
+#define Key_Member_1 @"title"
+#define Key_Member_2 @"post_type"
+#define Key_Member_3 @"id"
+
+
+#endif
